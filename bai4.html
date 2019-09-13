@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkPass(str) {
+        let regexp = /^[a-z0-9_-]{6,18}$/;
+        if (regexp.test(str)) {
+            document.write("<br/>" + str + " : true");
+        } else {
+            document.write("<br/>" + str + " :False");
+        }
+    }
+
+    var pass = 'khong the tin duoc';
+    var pass2 = '&&&$$$$$';
+    var pass3 = 'hoilamgi';
+    checkPass(pass);
+    checkPass(pass2);
+    checkPass(pass3);
+</script>
+</body>
+</html>
